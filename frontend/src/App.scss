@@ -1,0 +1,21 @@
+.form {
+  padding: 20px 0;
+
+  .form--input {
+    border-radius: 5px;
+    outline-color: grey;
+    border-style: solid;
+    padding: 20px;
+    font-size: 1.5em;
+    transition: .15s ease;
+  }
+  .form--input:focus {
+    border-radius: 10px;
+    outline-color: black;
+  }
+  .form--error {
+    color: red;
+    font-style: italic;
+    margin-top: 20px;
+  }
+}

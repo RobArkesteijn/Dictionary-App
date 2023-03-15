@@ -1,0 +1,76 @@
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.foreground {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.725);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease;
+}
+
+.foreground-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidemenu {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-color: rgb(200, 200, 200);
+    border-right: solid 1px black;
+    width: 50vw;
+    visibility: hidden;
+    margin-left: -50vw;
+    transition: .5s ease;
+    .sidemenu-title{
+        padding: 10px 0;
+    }
+    .sidemenu-save {
+        padding: 10px 0;
+    }
+    .sidemenu-logout {
+        position: fixed;
+        bottom: 0;
+        bottom: 2.5vh;
+        width: 30vw;
+        left: -40vw;
+        opacity: 1;
+        visibility: hidden;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+    .sidemenu-logout-visible {
+        left: 10vw;
+        visibility: visible;
+    }
+    .sidemenu-list {
+        .sidemenu-list--item {
+            margin: 5px 0;
+            background-color: white;
+            border-top: solid 2px black;
+            border-bottom: solid 2px black;
+            font-size: 1.2em;
+            padding: 3px 0;
+            transition: .1s ease;
+            cursor: pointer;
+        }
+        .sidemenu-list--item:active {
+            background-color: rgb(183, 182, 182);
+        }
+    }
+}
+
+.sidemenu-visible {
+    visibility: visible;
+    margin-left: 0;
+}

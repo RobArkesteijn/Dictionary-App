@@ -1,0 +1,50 @@
+.card{
+    display: flex;
+    justify-content: center;
+
+    .card-container {
+        outline: solid 1px grey;
+        border-radius: 10px;
+        width: 80vw;
+
+        .card-container--word {
+            margin-bottom: 10px;
+        }
+        .card-container--phonetic {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .card-container--list {
+            list-style: none;
+
+            .card-container--list-item{
+                margin: 25px 0;
+                .card-container--list-part {
+                    font-size: 1.1em;
+                    margin-bottom: 10px;
+                }
+
+                .card-container--list-synonyms {
+                    margin-top: 10px;
+                    .card-container--list-synonyms-title{
+                        padding: 5px 0;
+                    }
+                    .card-container--list-synonym-word{
+                        font-style: italic;
+                    }
+                }
+            }
+
+            .card-container--list-ordered {
+                list-style:disc;
+                .card-container--list-definition{
+                    text-align: left;
+                    margin-left: 25px;
+                    padding: 5px 15px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

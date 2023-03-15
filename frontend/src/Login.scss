@@ -1,0 +1,39 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .login-title {
+        background-color: rgb(218, 217, 217);
+        border: solid 1px black;
+        border-radius: 5px;
+        width: 40vw;
+        padding: 3px;
+        margin: 10px;
+        transition: .1s ease;
+        cursor: pointer;
+    }
+
+    .login-title:active {
+        background-color: grey;
+    }
+
+    .login-form{
+        display: grid;
+        justify-items: center;
+        
+        .login-form--input {
+            margin-bottom: 5px;
+        }
+
+        .login-form--button {
+            margin-top: 10px;
+            width: 20vw;
+        }
+    }
+    .login-error {
+        font-style: italic;
+        color: red;
+        margin-top: 20px
+    }
+}
+
